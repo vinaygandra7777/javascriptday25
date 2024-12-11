@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Simulate a pizza delivery system with steps:
+     1)Place order → Prepare pizza → Bake pizza → Pack pizza → Deliver pizza -->
+     <script>
+        function place(a){
+            console.log("place order")
+            a()
+        }
+        function prepare(a){
+            console.log("Prepare pizza")
+            a()
+        }
+        function bake(a){
+            console.log("Bake pizza")
+            a()
+        }
+        function pack(a){
+            console.log("Pack Pizza")
+            a()
+        }
+        function deliver(){
+            console.log("Deliver pizza")
+        }
+        place(()=>{
+            prepare(()=>{
+                bake(()=>{
+                    pack(()=>{
+                        deliver()
+                    })
+                })
+            })
+        })
+
+        
+     </script>
+</body>
+</html>
